@@ -8,6 +8,7 @@
 
     - name: install nginx
       apt:
+        become: true
         name: nginx
         state: present
 
