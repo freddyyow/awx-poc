@@ -1,4 +1,5 @@
 - hosts: servers
+  become: true
   tasks:
     - name: copy stuff
       copy: dest=/home/ansible/hello content=world
@@ -8,7 +9,7 @@
 
     - name: install nginx
       apt:
-        become: true
+        update_cache: yes
         name: nginx
         state: present
 
