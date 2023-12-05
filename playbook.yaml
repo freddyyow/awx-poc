@@ -2,7 +2,7 @@
   hosts: servers
   tasks:
   - copy: dest=/home/ansible/hello content=world
-  - file: path=/home/anisble/test state=directory
+  - file: path=/home/ansible/test state=directory
 
 # - name: Create a directory if it does not exist
 #   hosts: servers
