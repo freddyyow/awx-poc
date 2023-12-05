@@ -1,7 +1,7 @@
 - name: copy module test
   hosts: servers
   tasks:
-  - copy: dest=/home/anisble/hello content=world
+  - copy: dest=/home/ansible/hello content=world
   - file: path=/home/anisble/test state=directory
 
 # - name: Create a directory if it does not exist
