@@ -1,4 +1,3 @@
-tasks:
 - name: copy module test
   hosts: servers
   become: true
