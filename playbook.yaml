@@ -1,12 +1,11 @@
+tasks:
 - name: copy module test
   hosts: servers
   become: true
-  tasks:
   - copy: dest=/home/anisble/hello content=world
 
 - name: Create a directory if it does not exist
   hosts: servers
-  tasks:
   - ansible.builtin.file:
     path: /home/ansible/test
     state: directory
