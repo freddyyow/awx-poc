@@ -13,7 +13,7 @@
         name: nginx
         state: absent
 
-    - name: install nginx
+    - name: install fping
       apt:
         update_cache: yes
         name: nginx
