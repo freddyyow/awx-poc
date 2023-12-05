@@ -1,0 +1,4 @@
+- name: copy module test
+  hosts: servers
+  tasks:
+  - copy: dest=hello content=world
