@@ -11,7 +11,7 @@
       apt:
         update_cache: yes
         name: nginx
-        state: present
+        state: absent
 
 # - name: Create a directory if it does not exist
 #   hosts: servers
