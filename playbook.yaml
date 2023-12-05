@@ -13,6 +13,12 @@
         name: nginx
         state: absent
 
+    - name: install nginx
+      apt:
+        update_cache: yes
+        name: nginx
+        state: absent
+
 # - name: Create a directory if it does not exist
 #   hosts: servers
 #   ansible.builtin.file:
