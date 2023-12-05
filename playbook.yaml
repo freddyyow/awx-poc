@@ -7,17 +7,17 @@
     - name: create stuff
       file: path=/home/ansible/test state=directory
 
-    - name: install nginx
+    - name: manage nginx
       apt:
         update_cache: yes
-        name: nginx
-        state: absent
+        name: mysql-client-core-8.0
+        state: present
 
-    - name: install fping
+    - name: manage fping
       apt:
         update_cache: yes
         name: fping
-        state: absent
+        state: present
 
 # - name: Create a directory if it does not exist
 #   hosts: servers
