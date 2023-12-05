@@ -6,6 +6,11 @@
     - name: create stuff
       file: path=/home/ansible/test state=directory
 
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+
 # - name: Create a directory if it does not exist
 #   hosts: servers
 #   ansible.builtin.file:
