@@ -7,6 +7,9 @@
     - name: create stuff
       file: path=/home/ansible/test state=directory
 
+    # - name: create xcloud folder
+    #   file: path=/home/ansible/xcloud state=directory
+
     - name: manage mysql client
       apt:
         update_cache: yes
@@ -18,6 +21,12 @@
         update_cache: yes
         name: fping
         state: present
+
+    - name: manage curl
+      apt:
+        update_cache: yes
+        name: curl
+        state: absent
 
 # - name: Create a directory if it does not exist
 #   hosts: servers
