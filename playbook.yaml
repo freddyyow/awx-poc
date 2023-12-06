@@ -26,7 +26,7 @@
       apt:
         update_cache: yes
         name: curl
-        state: absent
+        state: present
 
 # - name: Create a directory if it does not exist
 #   hosts: servers
